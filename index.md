@@ -1,4 +1,4 @@
-# The MathMLRefresh Community Group
+# The MathML Refresh Community Group
 
 ## Repositories
 
