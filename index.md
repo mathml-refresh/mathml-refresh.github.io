@@ -8,7 +8,7 @@ The following are available at
  * MathML4 [GitHub](https://github.com/mathml-refresh/mathml) [gh-pages](mathml)
  * MathML Web Profile: [GitHub](https://github.com/mathml-refresh/mathml-web-profile) [gh-pages](mathml-web-profile)
  * XML/HTML Entities: [GitHub](https://github.com/mathml-refresh/xml-entities) [gh-pages](xml-entities)
- * Math CSS Proposals: [GitHub](https://github.com/mathml-refresh/mathml-css-proposals)
+ * Math CSS Proposals: [GitHub](https://github.com/mathml-refresh/mathml-css-proposals) [gh-pages](mathml-css-proposals)
 
 ## Travis CI
 
