@@ -10,6 +10,10 @@ The following are available at
  * XML/HTML Entities: [GitHub](https://github.com/mathml-refresh/xml-entities) [gh-pages](xml-entities)
  * Math CSS Proposals: [GitHub](https://github.com/mathml-refresh/mathml-css-proposals)
 
+## Travis CI
+
+[Travis Status](https://travis-ci.org/mathml-refresh)
+
 
 ## Group Page at W3C
 
