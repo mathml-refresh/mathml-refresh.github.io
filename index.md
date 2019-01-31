@@ -1,4 +1,4 @@
-# GitHub Pages for the MathML-refresh Community Group
+# The MathMLRefresh Community Group
 
 ## Repositories
 
