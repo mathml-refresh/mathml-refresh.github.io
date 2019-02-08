@@ -20,3 +20,12 @@ The following are available at
 ## Group Page at W3C
 
 [W3C MathML Refresh Group Page](https://www.w3.org/community/mathml4/)
+
+## W3C Repositories
+
+The following are available at 
+[W3C](https://github.com/w3c) These will be be periodically updated by merging from the mathml-refresh repositories)
+
+ | MathML4             | [GitHub](https://github.com/w3c/mathml)               | [gh-pages](https://w3c.github.io/mathml)               |
+ | XML/HTML Entities:  | [GitHub](https://github.com/w3c/xml-entities)         | [gh-pages](https://w3c.github.io/xml-entities)         |
+
