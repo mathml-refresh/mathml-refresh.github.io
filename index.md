@@ -31,3 +31,7 @@ These will be be periodically updated by merging from the mathml-refresh reposit
  | MathML4             | [GitHub](https://github.com/w3c/mathml)               | [gh-pages](https://w3c.github.io/mathml)               |
  | XML/HTML Entities:  | [GitHub](https://github.com/w3c/xml-entities)         | [gh-pages](https://w3c.github.io/xml-entities)         |
 
+
+## Web Platform Tests
+
+ | MathML tests | [GitHub](https://github.com/web-platform-tests/wpt/tree/master/mathml) | [w3c-tests.org](https://w3c-test.org/mathml/) |
