@@ -6,8 +6,8 @@ The following are available at
 [mathml-refresh](https://github.com/mathml-refresh)
 
 
- | MathML4             | [GitHub](https://github.com/mathml-refresh/mathml)               | [gh-pages](mathml)               |
- | MathML Web Profile: | [GitHub](https://github.com/mathml-refresh/mathml-web-profile)   | [gh-pages](mathml-web-profile)   |
+ | MathML4:            | [GitHub](https://github.com/mathml-refresh/mathml)               | [gh-pages](mathml)               |
+ | MathML Core:        | [GitHub](https://github.com/mathml-refresh/mathml-core)          | [gh-pages](mathml-core)          |
  | XML/HTML Entities:  | [GitHub](https://github.com/mathml-refresh/xml-entities)         | [gh-pages](xml-entities)         |
  | Math CSS Proposals: | [GitHub](https://github.com/mathml-refresh/mathml-css-proposals) | [gh-pages](mathml-css-proposals) |
  | Mfenced Polyfill:   | [GitHub](https://github.com/mathml-refresh/mfenced-polyfill)     | [gh-pages](mfenced-polyfill)     |
