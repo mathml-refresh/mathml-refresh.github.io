@@ -35,4 +35,4 @@ These will be be periodically updated by merging from the mathml-refresh reposit
 
 ## Web Platform Tests
 
- | MathML tests | [GitHub](https://github.com/web-platform-tests/wpt/tree/master/mathml) | [w3c-tests.org](https://w3c-test.org/mathml/) |
+ | MathML tests | [GitHub](https://github.com/web-platform-tests/wpt/tree/master/mathml) | [w3c-tests.org](https://w3c-test.org/mathml/) | [results](https://wpt.fyi/results/mathml) |
