@@ -11,7 +11,7 @@ The following are available at
  | XML/HTML Entities:  | [GitHub](https://github.com/mathml-refresh/xml-entities)         | [gh-pages](xml-entities)         |
  | MathML Schema    :  | [GitHub](https://github.com/mathml-refresh/mathml-schema)        | [gh-pages](mathml-schema)         |
  | Math CSS Proposals: | [GitHub](https://github.com/mathml-refresh/mathml-css-proposals) | [gh-pages](mathml-css-proposals) |
- | Mfenced Polyfill:   | [GitHub](https://github.com/mathml-refresh/mfenced-polyfill)     | [gh-pages](mfenced-polyfill)     |
+ | MathML Polyfills:   | [GitHub](https://github.com/mathml-refresh/mathml-polyfills)     | [gh-pages](mathml-polyfills)     |
 
 ## Travis CI
 
