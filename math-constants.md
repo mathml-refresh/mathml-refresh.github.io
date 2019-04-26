@@ -1,0 +1,535 @@
+# Math constants
+
+<ul>
+  <li><a href="https://docs.microsoft.com/en-us/typography/opentype/spec/math">MATH - The mathematical typesetting table</a></li>
+  <li><a href="https://www.tug.org/~vieth/papers/bachotex2009/ot-math-paper.pdf">OpenType Math Illuminated</a></li>
+  <li><a href="http://www.ctex.org/documents/shredder/src/texbook.pdf">The TeXBook</a> (Appendix G)</li>
+  <li><a href="https://mathml-refresh.github.io/mathml-core/">MathML Core</a></li>
+  <li><a href="https://dxr.mozilla.org/mozilla-central/source/layout/mathml/">Mozilla</a></li>
+  <li><a href="https://trac.webkit.org/browser/webkit/trunk/Source/WebCore/rendering/mathml/">WebKit</a></li>
+  <li><a href="https://github.com/Igalia/chromium-dev/tree/mathml-dev/third_party/blink/renderer/core/layout/ng/mathml/">Chromium</a>. Still being implemented but in general use the same fallback values as WebKit.</li>
+</ul>
+<table>
+  <tr>
+    <th></th>
+    <th>Correspondance in TeX</th>
+    <th>OpenType suggested default</th>
+    <th>Firefox fallback</th>
+    <th>WebKit fallback</th>
+    <th>Chromium fallback</th>
+    <th>MathML/CSS proposal</th>
+  </tr>
+  <tr>
+    <td>rule thickness</td>
+    <td>ξ<sub>8</sub></td>
+    <td>??</td>
+    <td>height of U+00AF MACRON if in the interval (0, x-height) or 40/430.556 x-height otherwise.</td>
+    <td>0.05em</td>
+    <td>Same as WebKit</td>
+    <td>??</td>
+  </tr>
+  <tr>
+    <td><code>scriptPercentScaleDown</code></td>
+    <td>Per-font macro</td>
+    <td>80%</td>
+    <td>Unused</td>
+    <td>Unused</td>
+    <td>Unused</td>
+    <td><a href="https://github.com/mathml-refresh/mathml-css-proposals/blob/master/math-script-level-and-math-style-explainer.md#css-math-script-level-property">0.8</a></td>
+  </tr>
+  <tr>
+    <td><code>scriptScriptPercentScaleDown</code></td>
+    <td>Per-font macro</td>
+    <td>60%</td>
+    <td>Unused</td>
+    <td>Unused</td>
+    <td>Unused</td>
+    <td><a href="https://github.com/mathml-refresh/mathml-css-proposals/blob/master/math-script-level-and-math-style-explainer.md#css-math-script-level-property">0.6</a></td>
+  </tr>
+  <tr>
+    <td><code>delimitedSubFormulaMinHeight</code></td>
+    <td>σ<sub>21</sub></td>
+    <td>normal line height × 1.5</td>
+    <td>Unused</td>
+    <td>Unused</td>
+    <td>Unused</td>
+    <td>Unused</td>
+  </tr>
+  <tr>
+    <td><code>displayOperatorMinHeight</code></td>
+    <td>??</td>
+    <td>None</td>
+    <td>0, additional heuristic</td>
+    <td>0, additional heuristic</td>
+    <td>Unused</td>
+    <td>0??, with <a href="https://mathml-refresh.github.io/mathml-core/#tokenmo">additional heuristic</a></td>
+  </tr>
+  <tr>
+    <td><code>mathLeading</code></td>
+    <td>Unused</td>
+    <td>None</td>
+    <td>Unused</td>
+    <td>Unused</td>
+    <td>Unused</td>
+    <td>Unused</td>
+  </tr>
+  <tr>
+    <td><code>axisHeight</code></td>
+    <td>σ<sub>22</sub> (axis height)</td>
+    <td>None</td>
+    <td>½ the height of U+2212 MINUS SIGN if in the interval (0, x-height) ; otherwise 250/430.556 the x-height.</td>
+    <td>½ x-height</td>
+    <td>Same as WebKit</td>
+    <td>??</td>
+  </tr>
+  <tr>
+    <td><code>accentBaseHeight</code></td>
+    <td>σ<sub>5</sub> (x-height)</td>
+    <td>x‑height of the font (os2.sxHeight) plus any possible overshots.</td>
+    <td>x-height</td>
+    <td>x-height</td>
+    <td></td>
+    <td>x-height??</td>
+  </tr>
+  <tr>
+    <td><code>flattenedAccentBaseHeight</code></td>
+    <td>?? (capital height)</td>
+    <td>cap height of the font (os2.sCapHeight)</td>
+    <td>Unused</td>
+    <td>Unused</td>
+    <td>Unused</td>
+    <td>Unused</td>
+  </tr>
+  <tr>
+    <td><code>subscriptShiftDown</code></td>
+    <td>σ<sub>16</sub>, σ<sub>17</sub></td>
+    <td>os2.ySubscriptYOffset</td>
+    <td>150/430.556 x-height for msub and 247.217/430.556 x-height</td>
+    <td>⅓ x-height</td>
+    <td></td>
+    <td>os2.ySubscriptYOffset??</td>
+  </tr>
+  <tr>
+    <td><code>subscriptTopMax</code></td>
+    <td>⅘σ<sub>5</sub></td>
+    <td>⅘ x-height</td>
+    <td>⅘ x-height</td>
+    <td>⅘ x-height</td>
+    <td></td>
+    <td>⅘ x-height??</td>
+  </tr>
+  <tr>
+    <td><code>subscriptBaselineDropMin</code></td>
+    <td>σ<sub>22</sub></td>
+    <td>None</td>
+    <td>50/430.556 x-height</td>
+    <td>½ x-height</td>
+    <td></td>
+    <td>??</td>
+  </tr>
+  <tr>
+    <td><code>superscriptShiftUp</code></td>
+    <td>σ<sub>13</sub>, σ<sub>14</sub></td>
+    <td>os2.ySuperscriptYOffset</td>
+    <td>412.892/430.556 x-height in display mode and scriptlevel 0, 362.892/430.556 x-height otherwise</td>
+    <td>x-height</td>
+    <td></td>
+    <td>os2.ySuperscriptYOffset??</td>
+  </tr>
+  <tr>
+    <td><code>superscriptShiftUpCramped</code></td>
+    <td>σ<sub>15</sub></td>
+    <td>None</td>
+    <td>288.889/430.556 x-height</td>
+    <td>Unused</td>
+    <td>Unused</td>
+    <td>??</td>
+  </tr>
+  <tr>
+    <td><code>superscriptBottomMin</code></td>
+    <td>¼σ<sub>5</sub></td>
+    <td>¼ x-height</td>
+    <td>¼ x-height</td>
+    <td>¼ x-height</td>
+    <td></td>
+    <td>¼ x-height</td>
+  </tr>
+  <tr>
+    <td><code>superscriptBaselineDropMax</code></td>
+    <td>σ<sub>18</sub></td>
+    <td>None</td>
+    <td>386.108/430.556 x-height</td>
+    <td>½ x-height</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><code>subSuperscriptGapMin</code></td>
+    <td>4ξ<sub>8</sub></td>
+    <td>4 × default rule thickness</td>
+    <td>4 × rule thickness</td>
+    <td>1/5 em</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><code>superscriptBottomMaxWithSubscript</code></td>
+    <td>⅘σ<sub>5</sub></td>
+    <td>⅘ x-height</td>
+    <td>⅘ x-height</td>
+    <td>⅘ x-height</td>
+    <td></td>
+    <td>⅘ x-height?</td>
+  </tr>
+  <tr>
+    <td><code>spaceAfterScript</code></td>
+    <td><code>\scriptspace</code></td>
+    <td>0.5pt for a 12pt font.</td>
+    <td>0.5pt</td>
+    <td>1/5 em</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><code>upperLimitGapMin</code></td>
+    <td>ξ<sub>9</sub></td>
+    <td>None</td>
+    <td>111.111/430.556f x-height</td>
+    <td>3 rule thickness</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><code>upperLimitBaselineRiseMin</code></td>
+    <td>ξ<sub>11</sub></td>
+    <td>None</td>
+    <td>200/430.556f x-height</td>
+    <td>0</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><code>lowerLimitGapMin</code></td>
+    <td>ξ<sub>10</sub></td>
+    <td>None</td>
+    <td>166.667/430.556f x-height</td>
+    <td>3 rulethickness</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><code>lowerLimitBaselineDropMin</code></td>
+    <td>ξ<sub>12</sub></td>
+    <td>None</td>
+    <td>600/430.556f x-height</td>
+    <td>0</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><code>stackTopShiftUp</code></td>
+    <td>σ<sub>10</sub></td>
+    <td>None</td>
+    <td>443.731/430.556 x-height</td>
+    <td>0</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><code>stackTopDisplayStyleShiftUp</code></td>
+    <td>σ<sub>8</sub></td>
+    <td>None</td>
+    <td>676.508/430.556 x-height</td>
+    <td>0</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><code>stackBottomShiftDown</code></td>
+    <td>σ<sub>12</sub></td>
+    <td>None</td>
+    <td>344.841/430.556 x-height</td>
+    <td>0</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><code>stackBottomDisplayStyleShiftDown</code></td>
+    <td>σ<sub>11</sub></td>
+    <td>None</td>
+    <td>685.951/430.556 x-height</td>
+    <td>0</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><code>stackGapMin</code></td>
+    <td>3ξ<sub>8</sub></td>
+    <td>3 × default rule thickness</td>
+    <td>3 × rule thickness</td>
+    <td>3 × rule thickness</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><code>stackDisplayStyleGapMin</code></td>
+    <td>7ξ<sub>8</sub></td>
+    <td>7 × default rule thickness</td>
+    <td>7 × rule thickness</td>
+    <td>3 × rule thickness</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><code>stretchStackTopShiftUp</code></td>
+    <td>ξ<sub>11</sub></td>
+    <td>None</td>
+    <td>Unused</td>
+    <td>0</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><code>stretchStackBottomShiftDown</code></td>
+    <td>ξ<sub>12</sub></td>
+    <td>None</td>
+    <td>Unused</td>
+    <td>0</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><code>stretchStackGapAboveMin</code></td>
+    <td>ξ<sub>9</sub></td>
+    <td>Same value as upperLimitGapMin</td>
+    <td>Unused</td>
+    <td>3 rule thickness</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><code>stretchStackGapBelowMin</code></td>
+    <td>ξ<sub>10</sub></td>
+    <td>Same value as lowerLimitGapMin.</td>
+    <td>Unused</td>
+    <td>3 rule thickness</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><code>fractionNumeratorShiftUp</code></td>
+    <td>σ<sub>9</sub></td>
+    <td>None</td>
+    <td>393.732/430.556 x-height</td>
+    <td>0</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><code>fractionNumeratorDisplayStyleShiftUp</code></td>
+    <td>σ<sub>8</sub></td>
+    <td>Same value as stackTopDisplayStyleShiftUp</td>
+    <td>676.508/430.556 x-height</td>
+    <td>0</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><code>fractionDenominatorShiftDown</code></td>
+    <td>σ<sub>12</sub></td>
+    <td>None</td>
+    <td>344.841/430.556 x-height</td>
+    <td>0</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><code>fractionDenominatorDisplayStyleShiftDown</code></td>
+    <td>σ<sub>11</sub></td>
+    <td>Same value as stackBottomDisplayStyleShiftDown</td>
+    <td>685.951/430.556 x-height</td>
+    <td>0</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><code>fractionNumeratorGapMin</code></td>
+    <td>ξ<sub>8</sub></td>
+    <td>default rule thickness</td>
+    <td>rule thickness + 1px</td>
+    <td>rule thickness</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><code>fractionNumDisplayStyleGapMin</code></td>
+    <td>3ξ<sub>8</sub></td>
+    <td>3 × default rule thickness</td>
+    <td>3 × rule thickness</td>
+    <td>3 × rule thickness</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><code>fractionRuleThickness</code></td>
+    <td>ξ<sub>8</sub></td>
+    <td>default rule thickness</td>
+    <td>rule thickness</td>
+    <td>rule thickness</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><code>fractionDenominatorGapMin</code></td>
+    <td>ξ<sub>8</sub></td>
+    <td>default rule thickness</td>
+    <td>rule thickness + 1px</td>
+    <td>rule thickness</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><code>fractionDenomDisplayStyleGapMin</code></td>
+    <td>3ξ<sub>8</sub></td>
+    <td>3 × default rule thickness</td>
+    <td>3 × rule thickness</td>
+    <td>3 × rule thickness</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><code>skewedFractionHorizontalGap</code></td>
+    <td>??</td>
+    <td>None</td>
+    <td>Unused</td>
+    <td>Unused</td>
+    <td>Unused</td>
+    <td>Unused</td>
+  </tr>
+  <tr>
+    <td><code>skewedFractionVerticalGap</code></td>
+    <td>??</td>
+    <td>None</td>
+    <td>Unused</td>
+    <td>Unused</td>
+    <td>Unused</td>
+    <td>Unused</td>
+  </tr>
+  <tr>
+    <td><code>overbarVerticalGap</code></td>
+    <td>3ξ<sub>8</sub></td>
+    <td>3 × default rule thickness</td>
+    <td>Unused</td>
+    <td>0</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><code>overbarRuleThickness</code></td>
+    <td>ξ<sub>8</sub></td>
+    <td>default rule thickness</td>
+    <td>Unused</td>
+    <td>Unused</td>
+    <td>Unused</td>
+    <td>Unused</td>
+  </tr>
+  <tr>
+    <td><code>overbarExtraAscender</code></td>
+    <td>ξ<sub>8</sub></td>
+    <td>default rule thickness</td>
+    <td>Unused</td>
+    <td>rule thickness</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><code>underbarVerticalGap</code></td>
+    <td>3ξ<sub>8</sub></td>
+    <td>3 × default rule thickness</td>
+    <td>Unused</td>
+    <td>3 rule thickness</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><code>underbarRuleThickness</code></td>
+    <td>ξ<sub>8</sub></td>
+    <td>default rule thickness</td>
+    <td>Unused</td>
+    <td>Unused</td>
+    <td>Unused</td>
+    <td>Unused</td>
+  </tr>
+  <tr>
+    <td><code>underbarExtraDescender</code></td>
+    <td>ξ<sub>8</sub></td>
+    <td>default rule thickness</td>
+    <td>Unused</td>
+    <td>rule thickness</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><code>radicalVerticalGap</code></td>
+    <td>5/4 ξ<sub>8</sub></td>
+    <td>1¼ default rule thickness</td>
+    <td>5/4 rule thickness</td>
+    <td>5/4 rule thickness</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><code>radicalDisplayStyleVerticalGap</code></td>
+    <td>ξ<sub>8</sub> + ¼σ<sub>5</sub></td>
+    <td>default rule thickness + ¼ x-height</td>
+    <td>rule thickness + ¼ x-height</td>
+    <td>rule thickness + ¼ x-height</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><code>radicalRuleThickness</code></td>
+    <td>ξ<sub>8</sub></td>
+    <td>default rule thickness</td>
+    <td>rule thickness</td>
+    <td>rule thickness</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><code>radicalExtraAscender</code></td>
+    <td>ξ<sub>8</sub></td>
+    <td>same value as radicalRuleThickness</td>
+    <td>0.2em</td>
+    <td>rule thickness</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><code>radicalKernBeforeDegree</code></td>
+    <td>Hardcoded in root macro (e.g. 5/18 em)</td>
+    <td>None</td>
+    <td>Special adjustment if missing</td>
+    <td>5/18 em</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><code>radicalKernAfterDegree</code></td>
+    <td>Hardcoded in root macro (e.g. −10/18 em)</td>
+    <td>−10/18 of em</td>
+    <td>−1.35 x-height</td>
+    <td>−10/18 em</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><code>radicalDegreeBottomRaisePercent</code></td>
+    <td>Hardcoded in root macro (e.g. .6)</td>
+    <td>60%</td>
+    <td>0.6</td>
+    <td>0.6</td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
