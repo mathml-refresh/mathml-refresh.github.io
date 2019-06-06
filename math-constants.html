@@ -15,6 +15,7 @@
   <li><a href="https://mathml-refresh.github.io/mathml-core/">MathML Core</a></li>
   <li><a href="https://dxr.mozilla.org/mozilla-central/source/layout/mathml/">Mozilla</a></li>
   <li><a href="https://trac.webkit.org/browser/webkit/trunk/Source/WebCore/rendering/mathml/">WebKit</a></li>
+  <li><a href="https://www.dessci.com/en/products/mathplayer/">MathPlayer</a></li>
   <li><a href="https://github.com/Igalia/chromium-dev/tree/mathml-dev/third_party/blink/renderer/core/layout/ng/mathml/">Chromium</a>. Still being implemented but in general use the same fallback values as WebKit.</li>
 </ul>
 <table border="1" width="100%">
@@ -25,6 +26,7 @@
     <th>Firefox fallback</th>
     <th>WebKit fallback</th>
     <th>Chromium fallback</th>
+    <th>MathPlayer</th>
     <th>MathML/CSS proposal</th>
   </tr>
   <tr>
@@ -34,6 +36,7 @@
     <td>height of U+00AF MACRON if in the interval (0, x-height) or 40/430.556 x-height otherwise.</td>
     <td>0.05em</td>
     <td>Same as WebKit</td>
+    <td>5% font size</td>
     <td>??</td>
   </tr>
   <tr>
@@ -42,7 +45,7 @@
     <td>80%</td>
     <td>Unused</td>
     <td>Unused</td>
-    <td>Unused</td>
+    <td>scriptsizemultiplier from MathML (default 0.71)</td>
     <td><a href="https://github.com/mathml-refresh/mathml-css-proposals/blob/master/math-script-level-and-math-style-explainer.md#css-math-script-level-property">0.8</a></td>
   </tr>
   <tr>
@@ -52,12 +55,14 @@
     <td>Unused</td>
     <td>Unused</td>
     <td>Unused</td>
+    <td>scriptsizemultiplier from MathML (default 0.71) -- used twice</td>
     <td><a href="https://github.com/mathml-refresh/mathml-css-proposals/blob/master/math-script-level-and-math-style-explainer.md#css-math-script-level-property">0.6</a></td>
   </tr>
   <tr>
     <td><code>delimitedSubFormulaMinHeight</code></td>
     <td>σ<sub>21</sub></td>
     <td>normal line height × 1.5</td>
+    <td>Unused</td>
     <td>Unused</td>
     <td>Unused</td>
     <td>Unused</td>
@@ -70,6 +75,7 @@
     <td>0, additional heuristic</td>
     <td>0, additional heuristic</td>
     <td>Unused</td>
+    <td>??</td>
     <td>0, with <a href="https://mathml-refresh.github.io/mathml-core/#tokenmo">additional heuristic</a></td>
   </tr>
   <tr>
@@ -79,6 +85,7 @@
     <td>Unused</td>
     <td>Unused</td>
     <td>Unused</td>
+    <td>Unused (chars are already larger)</td>
     <td>Unused</td>
   </tr>
   <tr>
@@ -88,6 +95,7 @@
     <td>½ the height of U+2212 MINUS SIGN if in the interval (0, x-height) ; otherwise 250/430.556 the x-height.</td>
     <td>½ x-height</td>
     <td>Same as WebKit</td>
+    <td>middle of '='</td>
     <td>??</td>
   </tr>
   <tr>
@@ -98,6 +106,7 @@
     <td>x-height</td>
     <td>Same as WebKit</td>
     <td>x-height</td>
+    <td>x-height</td>
   </tr>
   <tr>
     <td><code>flattenedAccentBaseHeight</code></td>
@@ -106,6 +115,7 @@
     <td>Unused</td>
     <td>Unused</td>
     <td>Unused</td>
+    <td>??</td>
     <td>Unused</td>
   </tr>
   <tr>
@@ -115,6 +125,7 @@
     <td>150/430.556 x-height for msub and 247.217/430.556 x-height</td>
     <td>⅓ x-height</td>
     <td>Same as WebKit</td>
+    <td>??</td>
     <td>os2.ySubscriptYOffset</td>
   </tr>
   <tr>
@@ -124,6 +135,7 @@
     <td>⅘ x-height</td>
     <td>⅘ x-height</td>
     <td>Same as WebKit</td>
+    <td>??</td>
     <td>⅘ x-height</td>
   </tr>
   <tr>
@@ -132,6 +144,7 @@
     <td>None</td>
     <td>50/430.556 x-height</td>
     <td>½ x-height</td>
+    <td>??</td>
     <td>Same as WebKit</td>
     <td>??</td>
   </tr>
@@ -142,6 +155,7 @@
     <td>412.892/430.556 x-height in display mode and scriptlevel 0, 362.892/430.556 x-height otherwise</td>
     <td>x-height</td>
     <td>Same as WebKit</td>
+    <td>??</td>
     <td>os2.ySuperscriptYOffset</td>
   </tr>
   <tr>
@@ -152,6 +166,7 @@
     <td>Unused</td>
     <td>Unused</td>
     <td>??</td>
+    <td>??</td>
   </tr>
   <tr>
     <td><code>superscriptBottomMin</code></td>
@@ -160,6 +175,7 @@
     <td>¼ x-height</td>
     <td>¼ x-height</td>
     <td>Same as WebKit</td>
+    <td>??</td>
     <td>¼ x-height</td>
   </tr>
   <tr>
@@ -170,6 +186,7 @@
     <td>½ x-height</td>
     <td>Same as WebKit</td>
     <td>??</td>
+    <td>??</td>
   </tr>
   <tr>
     <td><code>subSuperscriptGapMin</code></td>
@@ -178,6 +195,7 @@
     <td>4 × rule thickness</td>
     <td>1/5 em</td>
     <td>Same as WebKit</td>
+    <td>??</td>
     <td>4 × rule thickness</td>
   </tr>
   <tr>
@@ -187,6 +205,7 @@
     <td>⅘ x-height</td>
     <td>⅘ x-height</td>
     <td>Same as WebKit</td>
+    <td>??</td>
     <td>⅘ x-height</td>
   </tr>
   <tr>
@@ -197,6 +216,7 @@
     <td>1/5 em</td>
     <td>Same as WebKit</td>
     <td>??</td>
+    <td>??</td>
   </tr>
   <tr>
     <td><code>upperLimitGapMin</code></td>
@@ -205,6 +225,7 @@
     <td>111.111/430.556f x-height</td>
     <td>3 × rule thickness</td>
     <td>Unused</td>
+    <td>??</td>
     <td>??</td>
   </tr>
   <tr>
@@ -215,6 +236,7 @@
     <td>0</td>
     <td>Unused</td>
     <td>??</td>
+    <td>??</td>
   </tr>
   <tr>
     <td><code>lowerLimitGapMin</code></td>
@@ -223,6 +245,7 @@
     <td>166.667/430.556f x-height</td>
     <td>3 × rulethickness</td>
     <td>Unused</td>
+    <td>??</td>
     <td>??</td>
   </tr>
   <tr>
@@ -233,6 +256,7 @@
     <td>0</td>
     <td>Unused</td>
     <td>??</td>
+    <td>??</td>
   </tr>
   <tr>
     <td><code>stackTopShiftUp</code></td>
@@ -241,6 +265,7 @@
     <td>443.731/430.556 x-height</td>
     <td>0</td>
     <td>Unused</td>
+    <td>??</td>
     <td>??</td>
   </tr>
   <tr>
@@ -251,6 +276,7 @@
     <td>0</td>
     <td>Unused</td>
     <td>??</td>
+    <td>??</td>
   </tr>
   <tr>
     <td><code>stackBottomShiftDown</code></td>
@@ -259,6 +285,7 @@
     <td>344.841/430.556 x-height</td>
     <td>0</td>
     <td>Unused</td>
+    <td>??</td>
     <td>??</td>
   </tr>
   <tr>
@@ -269,6 +296,7 @@
     <td>0</td>
     <td>Unused</td>
     <td>??</td>
+    <td>??</td>
   </tr>
   <tr>
     <td><code>stackGapMin</code></td>
@@ -277,6 +305,7 @@
     <td>3 × rule thickness</td>
     <td>3 × rule thickness</td>
     <td>Unused</td>
+    <td>??</td>
     <td>3 × rule thickness</td>
   </tr>
   <tr>
@@ -286,6 +315,7 @@
     <td>7 × rule thickness</td>
     <td>7 × rule thickness</td>
     <td>Unused</td>
+    <td>??</td>
     <td>7 × rule thickness</td>
   </tr>
   <tr>
@@ -296,6 +326,7 @@
     <td>0</td>
     <td>Unused</td>
     <td>??</td>
+    <td>??</td>
   </tr>
   <tr>
     <td><code>stretchStackBottomShiftDown</code></td>
@@ -304,6 +335,7 @@
     <td>Unused</td>
     <td>0</td>
     <td>Unused</td>
+    <td>??</td>
     <td>??</td>
   </tr>
   <tr>
@@ -314,6 +346,7 @@
     <td>3 × rule thickness</td>
     <td>Unused</td>
     <td>??</td>
+    <td>??</td>
   </tr>
   <tr>
     <td><code>stretchStackGapBelowMin</code></td>
@@ -322,6 +355,7 @@
     <td>Unused</td>
     <td>3 × rule thickness</td>
     <td>Unused</td>
+    <td>??</td>
     <td>??</td>
   </tr>
   <tr>
@@ -332,6 +366,7 @@
     <td>0</td>
     <td>Same as WebKit</td>
     <td>??</td>
+    <td>??</td>
   </tr>
   <tr>
     <td><code>fractionNumeratorDisplayStyleShiftUp</code></td>
@@ -340,6 +375,7 @@
     <td>676.508/430.556 x-height</td>
     <td>0</td>
     <td>Same as WebKit</td>
+    <td>??</td>
     <td>??</td>
   </tr>
   <tr>
@@ -350,6 +386,7 @@
     <td>0</td>
     <td>Same as WebKit</td>
     <td>??</td>
+    <td>??</td>
   </tr>
   <tr>
     <td><code>fractionDenominatorDisplayStyleShiftDown</code></td>
@@ -359,6 +396,7 @@
     <td>0</td>
     <td>Same as WebKit</td>
     <td>??</td>
+    <td>??</td>
   </tr>
   <tr>
     <td><code>fractionNumeratorGapMin</code></td>
@@ -367,6 +405,7 @@
     <td>rule thickness + 1px</td>
     <td>rule thickness</td>
     <td>Same as WebKit</td>
+    <td>??</td>
     <td>rule thickness</td>
   </tr>
   <tr>
@@ -376,6 +415,7 @@
     <td>3 × rule thickness</td>
     <td>3 × rule thickness</td>
     <td>Same as WebKit</td>
+    <td>??</td>
     <td>3 × rule thickness</td>
   </tr>
   <tr>
@@ -385,6 +425,7 @@
     <td>rule thickness</td>
     <td>rule thickness</td>
     <td>Same as WebKit</td>
+    <td>??</td>
     <td>rule thickness</td>
   </tr>
   <tr>
@@ -394,6 +435,7 @@
     <td>rule thickness + 1px</td>
     <td>rule thickness</td>
     <td>Same as WebKit</td>
+    <td>??</td>
     <td>rule thickness</td>
   </tr>
   <tr>
@@ -403,6 +445,7 @@
     <td>3 × rule thickness</td>
     <td>3 × rule thickness</td>
     <td>Same as WebKit</td>
+    <td>??</td>
     <td>3 × rule thickness</td>
   </tr>
   <tr>
@@ -412,6 +455,7 @@
     <td>Unused</td>
     <td>Unused</td>
     <td>Unused</td>
+    <td>??</td>
     <td>Unused</td>
   </tr>
   <tr>
@@ -421,6 +465,7 @@
     <td>Unused</td>
     <td>Unused</td>
     <td>Unused</td>
+    <td>??</td>
     <td>Unused</td>
   </tr>
   <tr>
@@ -430,6 +475,7 @@
     <td>Unused</td>
     <td>3 × rule thickness</td>
     <td>Same as WebKit</td>
+    <td>??</td>
     <td>3 × rule thickness</td>
   </tr>
   <tr>
@@ -439,6 +485,7 @@
     <td>Unused</td>
     <td>Unused</td>
     <td>Unused</td>
+    <td>??</td>
     <td>Unused</td>
   </tr>
   <tr>
@@ -448,6 +495,7 @@
     <td>Unused</td>
     <td>rule thickness</td>
     <td>Same as WebKit</td>
+    <td>??</td>
     <td>rule thickness</td>
   </tr>
   <tr>
@@ -457,6 +505,7 @@
     <td>Unused</td>
     <td>3 × rule thickness</td>
     <td>Same as WebKit</td>
+    <td>??</td>
     <td>3 × rule thickness</td>
   </tr>
   <tr>
@@ -466,6 +515,7 @@
     <td>Unused</td>
     <td>Unused</td>
     <td>Unused</td>
+    <td>??</td>
     <td>Unused</td>
   </tr>
   <tr>
@@ -475,6 +525,7 @@
     <td>Unused</td>
     <td>rule thickness</td>
     <td>Same as WebKit</td>
+    <td>??</td>
     <td>rule thickness</td>
   </tr>
   <tr>
@@ -484,6 +535,7 @@
     <td>5/4 rule thickness</td>
     <td>5/4 rule thickness</td>
     <td>Same as WebKit</td>
+    <td>??</td>
     <td>5/4 rule thickness</td>
   </tr>
   <tr>
@@ -493,6 +545,7 @@
     <td>rule thickness + ¼ x-height</td>
     <td>rule thickness + ¼ x-height</td>
     <td>Same as WebKit</td>
+    <td>??</td>
     <td>rule thickness + ¼ x-height</td>
   </tr>
   <tr>
@@ -502,6 +555,7 @@
     <td>rule thickness</td>
     <td>rule thickness</td>
     <td>Same as WebKit</td>
+    <td>??</td>
     <td>rule thickness</td>
   </tr>
   <tr>
@@ -511,6 +565,7 @@
     <td>0.2em</td>
     <td>rule thickness</td>
     <td>Same as WebKit</td>
+    <td>??</td>
     <td>rule thickness</td>
   </tr>
   <tr>
@@ -521,6 +576,7 @@
     <td>5/18 em</td>
     <td>Same as WebKit</td>
     <td>??</td>
+    <td>??</td>
   </tr>
   <tr>
     <td><code>radicalKernAfterDegree</code></td>
@@ -529,6 +585,7 @@
     <td>−1.35 x-height</td>
     <td>−10/18 em</td>
     <td>Same as WebKit</td>
+    <td>??</td>
     <td>−10/18 em</td>
   </tr>
   <tr>
@@ -538,6 +595,7 @@
     <td>0.6</td>
     <td>0.6</td>
     <td>Same as WebKit</td>
+    <td>??</td>
     <td>.6</td>
   </tr>
 </table>
