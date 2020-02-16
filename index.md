@@ -8,7 +8,7 @@ The following are available at
 
  | MathML4:            | [GitHub](https://github.com/mathml-refresh/mathml)               | [gh-pages](mathml)               |
  | MathML Core:        | [GitHub](https://github.com/mathml-refresh/mathml-core)          | [gh-pages](mathml-core)          |
- | XML/HTML Entities:  | [GitHub](https://github.com/mathml-refresh/xml-entities)         | [gh-pages](xml-entities)         |
+ | XML/HTML Entities:  | [GitHub](https://github.com/mathml-refresh/xml-entities)         | [gh-pages](xml-entities) [opdict](xml-entities/opdict.html)  [unicode-names](xml-entities/unicode-names.html)      |
  | Notes on MathML:    | [GitHub](https://github.com/mathml-refresh/notes-on-mathml)      | [gh-pages](notes-on-mathml)      |
  | MathML Schema    :  | [GitHub](https://github.com/mathml-refresh/mathml-schema)        | [gh-pages](mathml-schema)        |
  | Math CSS Proposals: | [GitHub](https://github.com/mathml-refresh/mathml-css-proposals) | [gh-pages](mathml-css-proposals) |
