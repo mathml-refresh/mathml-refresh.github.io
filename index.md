@@ -7,8 +7,8 @@ The following are available at
 
 
  | MathML4:            | [Git Source](https://github.com/mathml-refresh/mathml)               | [HTML View](mathml)               |
- | MathML Core:        | [Git Source](https://github.com/mathml-refresh/mathml-core)          | [HTML View](mathml-core)<br>   [Explainer](mathml-core/docs/explainer)      |
- | XML/HTML Entities:  | [Git Source](https://github.com/mathml-refresh/xml-entities)         | [HTML View](xml-entities)<br> [opdict](xml-entities/opdict.html)<br>  [unicode-names](xml-entities/unicode-names.html)      |
+ | MathML Core:        | [Git Source](https://github.com/mathml-refresh/mathml-core)          | [HTML View](mathml-core),<br>   [Explainer](mathml-core/docs/explainer)      |
+ | XML/HTML Entities:  | [Git Source](https://github.com/mathml-refresh/xml-entities)         | [HTML View](xml-entities),<br> [opdict](xml-entities/opdict.html),<br>  [unicode-names](xml-entities/unicode-names.html)      |
  | Notes on MathML:    | [Git Source](https://github.com/mathml-refresh/notes-on-mathml)      | [HTML View](notes-on-mathml)      |
  | MathML Schema    :  | [Git Source](https://github.com/mathml-refresh/mathml-schema)        | [HTML View](mathml-schema)        |
  | Math CSS Proposals: | [Git Source](https://github.com/mathml-refresh/mathml-css-proposals) | [HTML View](mathml-css-proposals) |
