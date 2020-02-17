@@ -6,13 +6,13 @@ The following are available at
 [mathml-refresh](https://github.com/mathml-refresh)
 
 
- | MathML4:            | [GitHub](https://github.com/mathml-refresh/mathml)               | [gh-pages](mathml)               |
- | MathML Core:        | [GitHub](https://github.com/mathml-refresh/mathml-core)          | [gh-pages](mathml-core)          |
- | XML/HTML Entities:  | [GitHub](https://github.com/mathml-refresh/xml-entities)         | [gh-pages](xml-entities) [opdict](xml-entities/opdict.html)  [unicode-names](xml-entities/unicode-names.html)      |
- | Notes on MathML:    | [GitHub](https://github.com/mathml-refresh/notes-on-mathml)      | [gh-pages](notes-on-mathml)      |
- | MathML Schema    :  | [GitHub](https://github.com/mathml-refresh/mathml-schema)        | [gh-pages](mathml-schema)        |
- | Math CSS Proposals: | [GitHub](https://github.com/mathml-refresh/mathml-css-proposals) | [gh-pages](mathml-css-proposals) |
- | MathML Polyfills:   | [GitHub](https://github.com/mathml-refresh/mathml-polyfills)     | [gh-pages](mathml-polyfills)     |
+ | MathML4:            | [Git Source(https://github.com/mathml-refresh/mathml)               | [HTML View](mathml)               |
+ | MathML Core:        | [Git Source(https://github.com/mathml-refresh/mathml-core)          | [HTML View](mathml-core)          |
+ | XML/HTML Entities:  | [Git Source(https://github.com/mathml-refresh/xml-entities)         | [HTML View](xml-entities) [opdict](xml-entities/opdict.html)  [unicode-names](xml-entities/unicode-names.html)      |
+ | Notes on MathML:    | [Git Source(https://github.com/mathml-refresh/notes-on-mathml)      | [HTML View](notes-on-mathml)      |
+ | MathML Schema    :  | [Git Source(https://github.com/mathml-refresh/mathml-schema)        | [HTML View](mathml-schema)        |
+ | Math CSS Proposals: | [Git Source(https://github.com/mathml-refresh/mathml-css-proposals) | [HTML View](mathml-css-proposals) |
+ | MathML Polyfills:   | [Git Source(https://github.com/mathml-refresh/mathml-polyfills)     | [HTML View](mathml-polyfills)     |
 
 ## Travis CI
 
@@ -30,10 +30,10 @@ The following are available at
 
 These will be be periodically updated by merging from the mathml-refresh repositories.
 
- | MathML4             | [GitHub](https://github.com/w3c/mathml)               | [gh-pages](https://w3c.github.io/mathml)               |
- | XML/HTML Entities:  | [GitHub](https://github.com/w3c/xml-entities)         | [gh-pages](https://w3c.github.io/xml-entities)         |
+ | MathML4             | [Git Source(https://github.com/w3c/mathml)               | [HTML View](https://w3c.github.io/mathml)               |
+ | XML/HTML Entities:  | [Git Source(https://github.com/w3c/xml-entities)         | [HTML View](https://w3c.github.io/xml-entities)         |
 
 
 ## Web Platform Tests
 
- | MathML tests | [GitHub](https://github.com/web-platform-tests/wpt/tree/master/mathml) | [w3c-tests.org](https://w3c-test.org/mathml/) | [results](https://wpt.fyi/results/mathml) |
+ | MathML tests | [Git Source(https://github.com/web-platform-tests/wpt/tree/master/mathml) | [w3c-tests.org](https://w3c-test.org/mathml/) | [results](https://wpt.fyi/results/mathml) |
