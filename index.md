@@ -7,7 +7,7 @@ The following are available at
 
 
  | MathML4:            | [Git Source](https://github.com/mathml-refresh/mathml)               | [HTML View](mathml)               |
- | MathML Core:        | [Git Source](https://github.com/mathml-refresh/mathml-core)          | [HTML View](mathml-core)          |
+ | MathML Core:        | [Git Source](https://github.com/mathml-refresh/mathml-core)          | [HTML View](mathml-core)   [Explainer](mathml-core/docs/explainer)      |
  | XML/HTML Entities:  | [Git Source](https://github.com/mathml-refresh/xml-entities)         | [HTML View](xml-entities) [opdict](xml-entities/opdict.html)  [unicode-names](xml-entities/unicode-names.html)      |
  | Notes on MathML:    | [Git Source](https://github.com/mathml-refresh/notes-on-mathml)      | [HTML View](notes-on-mathml)      |
  | MathML Schema    :  | [Git Source](https://github.com/mathml-refresh/mathml-schema)        | [HTML View](mathml-schema)        |
