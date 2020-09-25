@@ -9,7 +9,7 @@ The following are available at
  | MathML4:            | [Git Source](https://github.com/mathml-refresh/mathml)               | [HTML View](mathml)               |
  | MathML Core:        | [Git Source](https://github.com/mathml-refresh/mathml-core)          | [HTML View](mathml-core) <br>   [Explainer](mathml-core/docs/explainer)      |
  | XML/HTML Entities:  | [Git Source](https://github.com/mathml-refresh/xml-entities)         | [HTML View](xml-entities) <br> [opdict](xml-entities/opdict.html),<br>  [unicode-names](xml-entities/unicode-names.html)      |
- | MathML WG Charter Draft:  |          | [Google Doc](https://docs.google.com/document/d/1W-oYUbOMueaqb3KFSWkjWVBwR6AzSEBizHwQhvSwfDc/)      |
+ | MathML WG Charter Draft:  | [Git Source](https://github.com/mathml-refresh/charter-drafts)         | [HTML View](charter-drafts/math-2020.html)      |
  | Notes on MathML:    | [Git Source](https://github.com/mathml-refresh/notes-on-mathml)      | [HTML View](notes-on-mathml)      |
  | MathML Schema    :  | [Git Source](https://github.com/mathml-refresh/mathml-schema)        | [HTML View](mathml-schema)        |
  | Math CSS Proposals: | [Git Source](https://github.com/mathml-refresh/mathml-css-proposals) | [HTML View](mathml-css-proposals) |
