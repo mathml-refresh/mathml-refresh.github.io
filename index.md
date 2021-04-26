@@ -14,7 +14,7 @@ The following are available at
  | MathML Schema    :  | [Git Source](https://github.com/mathml-refresh/mathml-schema)        | [HTML View](mathml-schema)        |
  | Math CSS Proposals: | [Git Source](https://github.com/mathml-refresh/mathml-css-proposals) | [HTML View](mathml-css-proposals) |
  | MathML Polyfills:   | [Git Source](https://github.com/mathml-refresh/mathml-polyfills)     | [HTML View](mathml-polyfills)     |
-
+ | Discussion Papers   | [Git Source](https://github.com/mathml-refresh/discussion-papers)    | [HTML View](discussion-papers)    |
 ## Travis CI
 
 [Travis Status](https://travis-ci.org/mathml-refresh)
