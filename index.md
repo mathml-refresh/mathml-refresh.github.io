@@ -9,7 +9,7 @@ The following are available at
 
 
  | MathML4             | [Git Source](https://github.com/w3c/mathml)               | [HTML View](https://w3c.github.io/mathml)               |
- | MathML Core:        | [Git Source](https://github.com/w3c/mathml-core)          | [HTML View](mathml-core) <br> [Explainer](mathml-core/docs/explainer)      |
+ | MathML Core:        | [Git Source](https://github.com/w3c/mathml-core)          | [HTML View](https://w3c.github.io/mathml-core) <br> [Explainer](https://w3c.github.io/mathml-core/docs/explainer)      |
  | XML/HTML Entities:  | [Git Source](https://github.com/w3c/xml-entities)         | [HTML View](https://w3c.github.io/xml-entities)         |
 
 
