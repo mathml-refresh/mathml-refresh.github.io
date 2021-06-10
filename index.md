@@ -1,4 +1,4 @@
-# The MathML Refresh Community Group
+# The Math Working Group
 
 ## Repositories
 
@@ -7,7 +7,6 @@
 The following are available at 
 [W3C](https://github.com/w3c).
 
-These will be be periodically updated by merging from the mathml-refresh repositories.
 
  | MathML4             | [Git Source](https://github.com/w3c/mathml)               | [HTML View](https://w3c.github.io/mathml)               |
  | MathML Core:        | [Git Source](https://github.com/w3c/mathml-core)          | [HTML View](mathml-core) <br> [Explainer](mathml-core/docs/explainer)      |
@@ -29,12 +28,14 @@ The following are available at
 
 
 
+<!--
 ## Travis CI
 
 [Travis Status](https://travis-ci.org/mathml-refresh)
+-->
 
 
-## Group Page at W3C
+## Community Group Page at W3C
 
 [W3C MathML Refresh Group Page](https://www.w3.org/community/mathml4/)
 
