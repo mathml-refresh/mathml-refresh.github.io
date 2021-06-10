@@ -1,14 +1,13 @@
 # The Math Working Group
 
-## Repositories
 
-## W3C Repositories
+## W3C Math WG Repositories
 
 The following are available at 
 [W3C](https://github.com/w3c).
 
 
- | MathML4             | [Git Source](https://github.com/w3c/mathml)               | [HTML View](https://w3c.github.io/mathml)               |
+ | MathML              | [Git Source](https://github.com/w3c/mathml)               | [HTML View](https://w3c.github.io/mathml)               |
  | MathML Core:        | [Git Source](https://github.com/w3c/mathml-core)          | [HTML View](https://w3c.github.io/mathml-core) <br> [Explainer](https://w3c.github.io/mathml-core/docs/explainer)      |
  | XML/HTML Entities:  | [Git Source](https://github.com/w3c/xml-entities)         | [HTML View](https://w3c.github.io/xml-entities)         |
 
@@ -29,7 +28,13 @@ The following are available at
 
 
 
-## Other MathML related repositories at W3C
+## Web Platform Tests
+
+ | MathML tests | [Git Source](https://github.com/web-platform-tests/wpt/tree/master/mathml) | [w3c-tests.org](https://w3c-test.org/mathml/) | [results](https://wpt.fyi/results/mathml) |
+
+
+
+## Other MathML related repositories at W3C (not owned by the Math WG)
 
 | mathml-aam  | [Git Source](https://github.com/w3c/mathml-aam)  | [HTML View](https://w3c.github.io/mathml-aam)  |
 | mathml-aria | [Git Source](https://github.com/w3c/mathml-aria) | [HTML View](https://w3c.github.io/mathml-aria) |
@@ -41,12 +46,13 @@ The following are available at
 [Travis Status](https://travis-ci.org/mathml-refresh)
 -->
 
+## W3C Math WG Page
 
-## Community Group Page at W3C
+[W3C Math Working Group](https://www.w3.org/Math/)
+
+
+## W3C Community Group Page
 
 [W3C MathML Refresh Group Page](https://www.w3.org/community/mathml4/)
 
 
-## Web Platform Tests
-
- | MathML tests | [Git Source](https://github.com/web-platform-tests/wpt/tree/master/mathml) | [w3c-tests.org](https://w3c-test.org/mathml/) | [results](https://wpt.fyi/results/mathml) |
