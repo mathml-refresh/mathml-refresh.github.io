@@ -7,9 +7,9 @@ The following are available at
 [W3C](https://github.com/w3c).
 
 
- | MathML              | [Git Source](https://github.com/w3c/mathml)               | [HTML View](https://w3c.github.io/mathml)               |
+ | MathML              | [Git Source](https://github.com/w3c/mathml)               | [HTML View](https://w3c.github.io/mathml) |
  | MathML Core:        | [Git Source](https://github.com/w3c/mathml-core)          | [HTML View](https://w3c.github.io/mathml-core) <br> [Explainer](https://w3c.github.io/mathml-core/docs/explainer)      |
- | XML/HTML Entities:  | [Git Source](https://github.com/w3c/xml-entities)         | [HTML View](https://w3c.github.io/xml-entities)         |
+ | XML/HTML Entities:  | [Git Source](https://github.com/w3c/xml-entities)         | [HTML View](https://w3c.github.io/xml-entities) <br> [Operator Dictionary](https://w3c.github.io/opdict.html) <br> [Unicode Names](https://w3c.github.io/xml-entities/unicode-names.html) |
 
 
 
