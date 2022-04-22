@@ -19,8 +19,8 @@ The following are available at
 
 The following are available at
 [mathml-refresh](https://github.com/mathml-refresh) This GitHub
-Organisation was set up by the MathML-Refresh Community Group which
-ran for two years prior to the prior to the Current Math Working Group
+Organization was set up by the MathML-Refresh Community Group which
+ran for two years prior to to the current Math Working Group
 charter (April 2021).
 
 
