@@ -10,15 +10,14 @@ The following are available at
  | MathML              | [Git Source](https://github.com/w3c/mathml)               | [HTML View](https://w3c.github.io/mathml) |
  | MathML Core:        | [Git Source](https://github.com/w3c/mathml-core)          | [HTML View](https://w3c.github.io/mathml-core) <br> [Explainer](https://w3c.github.io/mathml-core/docs/explainer)      |
  | XML/HTML Entities:  | [Git Source](https://github.com/w3c/xml-entities)         | [HTML View](https://w3c.github.io/xml-entities) <br> [Operator Dictionary](https://w3c.github.io/xml-entities/opdict.html) <br> [Unicode Names](https://w3c.github.io/xml-entities/unicode-names.html) |
-| MathML Documents |  [Git Source](https://github.com/w3c/mathml-docs) | [HTML View](https://w3c.github.io/mathml-docs/) <br> 
-[Notes on MathML](https://github.com/w3c/mathml-docs/notes-on-mathml) <br> [MathML Media Types](https://github.com/w3c/mathml-docsmathml-media-types/) |
+| MathML Documents |  [Git Source](https://github.com/w3c/mathml-docs) | [HTML View](https://w3c.github.io/mathml-docs/) <br> [Notes on MathML](https://github.com/w3c/mathml-docs/notes-on-mathml) <br> [MathML Media Types](https://github.com/w3c/mathml-docsmathml-media-types/) |
 
 
 
 ## mathml-refresh Repositories
 
 The following are available at
-[mathml-refresh](https://github.com/mathml-refresh) This GitHub
+[mathml-refresh](https://github.com/mathml-refresh). This GitHub
 Organization was set up by the MathML-Refresh Community Group which
 ran for two years prior to to the current Math Working Group
 charter (April 2021).
