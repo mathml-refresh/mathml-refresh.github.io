@@ -11,6 +11,8 @@ The following are available at
  | MathML Core:        | [Git Source](https://github.com/w3c/mathml-core)          | [HTML View](https://w3c.github.io/mathml-core) <br> [Explainer](https://w3c.github.io/mathml-core/docs/explainer)      |
  | XML/HTML Entities:  | [Git Source](https://github.com/w3c/xml-entities)         | [HTML View](https://w3c.github.io/xml-entities) <br> [Operator Dictionary](https://w3c.github.io/xml-entities/opdict.html) <br> [Unicode Names](https://w3c.github.io/xml-entities/unicode-names.html) |
 | MathML Documents |  [Git Source](https://github.com/w3c/mathml-docs) | [HTML View](https://w3c.github.io/mathml-docs/) <br> [Notes on MathML](https://github.com/w3c/mathml-docs/notes-on-mathml) <br> [MathML Media Types](https://github.com/w3c/mathml-docsmathml-media-types/) |
+ | MathML Schema    :  | [Git Source](https://github.com/w3c/mathml-schema)        | [HTML View](https://w3c.github.io/mathml-schema)        |
+ | MathML Polyfills:   | [Git Source](https://github.com/w3c/mathml-polyfills)     | [HTML View](https://w3c.github.io/mathml-polyfills)     |
 
 
 
@@ -24,13 +26,13 @@ charter (April 2021).
 
 
  | MathML WG Charter Draft:  | [Git Source](https://github.com/mathml-refresh/charter-drafts)         | [HTML View](charter-drafts/math-2020.html)      |
- | Notes on MathML:    | [Git Source](https://github.com/mathml-refresh/notes-on-mathml)      | [HTML View](notes-on-mathml)      |
- | MathML Schema    :  | [Git Source](https://github.com/mathml-refresh/mathml-schema)        | [HTML View](mathml-schema)        |
  | Math CSS Proposals: | [Git Source](https://github.com/mathml-refresh/mathml-css-proposals) | [HTML View](mathml-css-proposals) |
- | MathML Polyfills:   | [Git Source](https://github.com/mathml-refresh/mathml-polyfills)     | [HTML View](mathml-polyfills)     |
  | Discussion Papers   | [Git Source](https://github.com/mathml-refresh/discussion-papers)    | [HTML View](discussion-papers)    |
 
 
+## archived
+
+ | Notes on MathML:    | [Git Source](https://github.com/mathml-refresh/notes-on-mathml)      | see [w3/mathml-docs](https://github.com/w3c/mathml-docs) |
 
 ## Web Platform Tests
 
